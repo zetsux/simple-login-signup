@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <title>Sign Up Page</title>
+    <script src="script.js"></script>
+    <style>
+        * {
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        body {
+            background-color: #191825;
+        }
+
+        .container {
+            background-image: linear-gradient(to bottom right, #E384FF, #865DFF);
+            padding: 1rem;
+            width: 24%;
+            margin: 0 auto;
+            border-radius: 15px;
+            position: absolute;
+            top: 10%;
+            left: 36%;
+            box-shadow: 0 0 400px #865DFF;
+            border: 3px solid white;
+        }
+
+        h1 {
+            font-size: 220%;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            position: relative;;
+            text-align: start;
+            color: whitesmoke;
+            margin-bottom: 0.4rem;
+        }
+
+        input {
+            background-image: linear-gradient(to right, rgba(255, 163, 253, 0.9), rgb(255, 163, 253));
+            border: 1.5px solid white;
+            border-radius: 5px;
+            min-height: 30px;
+            margin-bottom: 0.5rem;
+            color: white;
+            padding: 0.1rem 0.5rem;
+            box-shadow: 0 0 6px white;
+        }
+
+        #signup {
+            margin-top: 0.8rem;
+            background-color: #865DFF;
+            border: 2.5px solid white;
+            padding: 0.5rem 2.5rem;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            transition: color .3s, background-color .3s, border .3s, box-shadow .3s;
+        }
+
+        #signup:hover {
+            background-color: white;
+            border: 2.5px solid #865DFF;
+            color: #865DFF;
+            box-shadow: 0 0 4px #865DFF;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body align="center">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <section class="form-container">
+            <div class="form">
+                <h4>Name</h4>
+                <input type="text" name="name" placeholder="Enter your name.." id="n1" required><br>
+                <h4>Email</h4>
+                <input type="email" placeholder="Enter your email.." name="email" id="e1" required><br>
+                <h4>Set Password</h4>
+                <input type="password" placeholder="Enter your password.." name="password" id="p1" required><br>
+                <h4>Confirm Password</h4>
+                <input type="password" placeholder="Confirm your password.." name="confirm" id="p2" required><br><br>
+        
+                <button type="button" value="Create" id="signup" onclick="createAccount()">Sign Up</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
